@@ -1,5 +1,3 @@
-import { Mail, MessageSquare, Send } from "lucide-react"
-
 export default function ContactSection() {
   return (
     <section className="py-16 border-t border-[#333]" id="contact">

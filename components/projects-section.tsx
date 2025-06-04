@@ -49,7 +49,7 @@ export default function ProjectsSection() {
                   style={{ width: `${project.progress}%` }}
                 ></div>
               </div>
-              <p className="text-sm text-[#666] italic mb-4">"{project.quote}"</p>
+              <p className="text-sm text-[#666] italic mb-4">&quot;{project.quote}&quot;</p>
             </div>
             <a
               href="#"

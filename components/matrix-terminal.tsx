@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import TypewriterTerminal from "./typewriter-terminal"
 
 const terminalLines = [
@@ -15,8 +14,6 @@ const terminalLines = [
 ]
 
 export default function MatrixTerminal() {
-  const [isAnalyzing, setIsAnalyzing] = useState(true)
-
   return (
     <section className="py-16">
       <div className="max-w-5xl mx-auto">
@@ -38,7 +35,6 @@ export default function MatrixTerminal() {
 
         <div className="mt-8 text-center">
           <button
-            onClick={() => setIsAnalyzing(true)}
             className="matrix-btn border-2 border-[#ff0080] text-[#ff0080] px-6 py-3 hover:bg-[#ff0080] hover:text-white transition-colors duration-300 relative overflow-hidden group"
           >
             <span className="relative z-10">./nieuwe_analyse</span>

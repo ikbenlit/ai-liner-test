@@ -78,7 +78,7 @@ export default function MatrixProjects() {
             </div>
 
             <div className="text-xs text-[#666] italic mb-6">
-              "{project.quote}"
+              &quot;{project.quote}&quot;
             </div>
 
             <div className="mb-4">

@@ -1,4 +1,4 @@
-import { User, Palette, Brain, Zap } from "lucide-react"
+import { Palette, Brain } from "lucide-react"
 
 const profiles = [
   {
