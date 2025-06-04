@@ -1,61 +1,46 @@
 const cases = [
   {
-    title: "Van Lokale Garage naar Europese Speler",
+    title: "Verffabrikant Transformatie (4 weken)",
     before: [
-      "Kleine dakdekker, handmatige offertes, lokale klanten",
+      "6 uur/dag aan support, gemiste kansen, beperkte internationale orders",
     ],
     after: [
-      "Orders uit 6 landen, 400% omzetgroei, wachtlijst van 3 maanden",
+      "Orders uit 15 landen, 340% ROI, 90% minder support tijd",
     ],
-    foundation: "Premium branding, meertalige website, professionele marketing",
-    acceleration: "AI-offerte systeem, automatische planning, CRM integratie",
-    timeline: "8 weken",
-    roi: 400,
-    quote: "We zijn van buurtbedrijf naar marktleider gegaan in 2 maanden",
+    foundation: "Nieuwe huisstijl en logo, B2B website met productcatalogus, internationale uitstraling",
+    acceleration: "12-talige AI technische support, automatische offerte generator, CRM integratie en lead scoring",
+    timeline: "4 weken",
+    roi: 340,
+    quote: "Onze AI verkoopt nu beter dan onze beste vertegenwoordiger.",
     progressGradient: "from-[#2E9BDA] via-[#00ff41] to-[#ff0080]",
   },
   {
-    title: "Van Chaos naar Controle",
+    title: "Dakdekker Schaalvergroting (6 weken)",
     before: [
-      "Eventplanner, verdronken in emails, overstressed",
+      "Lokaal actief, handmatige offertes, beperkte groei",
     ],
     after: [
-      "60% minder admin, 40% meer events, premium pricing",
+      "Van lokaal naar 3 provincies, 400% meer leads, wachtlijst van 3 maanden",
     ],
-    foundation: "Luxury branding, premium website, testimonial systeem",
-    acceleration: "AI coördinator, automatische workflows, client portal",
+    foundation: "Premium rebranding voor groei, professionele website met portfolio, marketing materialen voor expansion",
+    acceleration: "WhatsApp offerte AI via foto's, automatische planning en scheduling, customer journey automation",
     timeline: "6 weken",
-    roi: 140,
-    quote: "Ik organiseer nu events in heel Europa terwijl ik meer tijd heb voor mijn gezin",
+    roi: 400,
+    quote: "We zijn van buurtbedrijf naar marktleider gegaan in 2 maanden.",
     progressGradient: "from-[#F5B041] via-[#ff0080] to-[#00bfff]",
-  },
-  {
-    title: "Van Vragen Beantwoorden naar Orders Ontvangen",
-    before: [
-      "Verffabrikant, 6 uur/dag aan support, gemiste kansen",
-    ],
-    after: [
-      "Orders uit 15 landen, 90% minder support tijd, 340% ROI",
-    ],
-    foundation: "B2B branding, technische catalogi, beursaanwezigheid",
-    acceleration: "12-talige AI expert, automatische offertes, lead scoring",
-    timeline: "4 weken",
-    roi: 340,
-    quote: "Onze AI verkoopt nu beter dan onze beste vertegenwoordiger",
-    progressGradient: "from-[#E74C3C] via-[#00bfff] to-[#00ff41]",
   },
 ]
 
-export default function FusionProjects() {
+export default function TeamCases() {
   return (
-    <section className="py-16 border-t border-[#333]" id="projects">
+    <section className="py-16 border-t border-[#333]" id="team-cases">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4 relative">
-          ./transformatie_cases
+          ./team_cases
           <span className="text-[#00ff41] animate-pulse">{">"}</span>
         </h2>
         <p className="text-[#666] max-w-2xl mx-auto">
-          Complete transformatie verhalen met meetbaar resultaat
+          Gezamenlijke transformatie cases met meetbaar resultaat
         </p>
       </div>
 

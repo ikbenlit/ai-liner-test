@@ -9,6 +9,7 @@ interface TypewriterTerminalProps {
   typingSpeed?: number
   linePause?: number
   theme?: "matrix" | "fundament"
+  onTypingComplete?: () => void
 }
 
 export default function TypewriterTerminal({
@@ -18,6 +19,7 @@ export default function TypewriterTerminal({
   typingSpeed = 35,
   linePause = 700,
   theme = "fundament",
+  onTypingComplete,
 }: TypewriterTerminalProps) {
   const [currentLineIndex, setCurrentLineIndex] = useState(0)
   const [currentCharIndex, setCurrentCharIndex] = useState(0)
@@ -85,6 +87,12 @@ export default function TypewriterTerminal({
       return () => clearTimeout(nextLineTimer)
     }
   }, [currentLineIndex, currentCharIndex, isTypingComplete, lines, typingSpeed, linePause])
+
+  useEffect(() => {
+    if (isTypingComplete && onTypingComplete) {
+      onTypingComplete()
+    }
+  }, [isTypingComplete, onTypingComplete])
 
   return (
     <div className={`terminal-window border ${colors.border} ${colors.bodyBg} rounded overflow-hidden ${className}`}>

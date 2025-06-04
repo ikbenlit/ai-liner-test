@@ -333,198 +333,43 @@ BEHOUD: Progress bars, gradient animations, status badges
 ## 🚀 Gefaseerd Stappenplan voor AI-Developer
 
 ### ~~FASE 1: BASIS SETUP (25 min)~~ ✅
-
 **Stap 1.1: Route Structure Kopiëren (10 min)** ✅
-```
-☑️ Bestand gekopieerd: app/fusion/page.tsx → app/over-ons/page.tsx
-☑️ Imports en componentnamen aangepast naar team-variant
-☑️ Team componenten aangemaakt (gekopieerd en hernoemd)
-```
-
 **Stap 1.2: Navigation Updates (15 min)** ✅
-```
-☑️ Team link toegevoegd aan navigatie in app/page.tsx, matrix-header.tsx en fusion-header.tsx
-```
 
-### FASE 2: TEAM HERO COMPONENT (50 min)
+### ~~FASE 2: TEAM HERO COMPONENT (50 min)~~ ✅
+**Stap 2.1: Hero Component Basis (20 min)** ✅
+**Stap 2.2: Hero Content Aanpassingen (30 min)** ✅
 
-**Stap 2.1: Hero Component Basis (20 min)**
-```
-🔄 Nu bezig: Kopieer components/fusion-hero.tsx → components/team-hero.tsx
-🔄 Behoud alle styling classes en wrapper divs
-🔄 Behoud MatrixRain component referentie
-```
+### ~~FASE 3: TEAM PROFILES COMPONENT (70 min)~~ ✅
+**Stap 3.1: Profiles Component Basis (20 min)** ✅
+**Stap 3.2: Dual Profile Setup (50 min)** ✅
 
-**Stap 2.2: Hero Content Aanpassingen (30 min)**
-```
-□ Wijzig hoofdtitel van "AI-LINER FUSION" naar "ONTMOET HET AI-LINER TEAM"
-□ Wijzig subtitel van "RETRO MEETS MATRIX" naar "ELMER × COLIN = COMPLETE TRANSFORMATIE"  
-□ Wijzig beschrijving naar team-gerichte messaging
-□ Update CTA button teksten naar team-specifieke acties
-□ Wijzig terminal headers van fusion naar team terminals
-□ Pas terminal content aan naar team introductie
-□ Behoud alle gradient effects, glitch animations, button styling
-```
+### ~~FASE 4: TEAM SYNERGY COMPONENT (40 min)~~ ✅
+**Stap 4.1: Synergy Component Basis (15 min)** ✅
+**Stap 4.2: Synergy Content Aanpassingen (25 min)** ✅
 
-### FASE 3: TEAM PROFILES COMPONENT (70 min)
+### ~~FASE 5: TEAM PROCESS COMPONENT (60 min)~~ ✅
+**Stap 5.1: Process Component Basis (15 min)** ✅
+**Stap 5.2: Process Timeline Implementation (45 min)** ✅
 
-**Stap 3.1: Profiles Component Basis (20 min)**
-```
-□ Kopieer components/fusion-features.tsx  
-□ Hernoem naar components/team-profiles.tsx
-□ Behoud grid layout en styling classes
-□ Behoud gradient borders en animations
-```
+### ~~FASE 6: TEAM CASES COMPONENT (75 min)~~ ✅
+**Stap 6.1: Cases Component Basis (20 min)** ✅
+**Stap 6.2: Case Studies Implementation (55 min)** ✅
 
-**Stap 3.2: Dual Profile Setup (50 min)**
-```
-□ Reduceer features array van 6 naar 2 items
-□ Item 1: Elmer Harkema profiel
-  - Titel wijzigen naar "Foundation Architect - Elmer Harkema"
-  - Icon vervangen door User of Palette icon
-  - Beschrijving aanpassen naar Elmer's specialiteiten
-  - Quote toevoegen over foundation importance
-  - Colors: primary text-[#2E9BDA], secondary text-[#F5B041]
+### ~~FASE 7: TEAM CONTACT COMPONENT (35 min)~~ ✅
+**Stap 7.1: Contact Component Basis (10 min)** ✅
+**Stap 7.2: Contact Content Aanpassingen (25 min)** ✅
 
-□ Item 2: Colin Lit profiel  
-  - Titel wijzigen naar "AI Acceleration Specialist - Colin Lit"
-  - Icon vervangen door Brain of Zap icon
-  - Beschrijving aanpassen naar Colin's specialiteiten
-  - Quote toevoegen over AI business value
-  - Colors: primary text-[#00ff41], secondary text-[#ff0080]
-
-□ Behoud alle hover effects, glow effects, section header styling
-```
-
-### FASE 4: TEAM SYNERGY COMPONENT (40 min)
-
-**Stap 4.1: Synergy Component Basis (15 min)**
-```
-□ Kopieer components/fusion-services.tsx
-□ Hernoem naar components/team-synergy.tsx  
-□ Behoud service card grid layout
-□ Behoud progress bars en gradient styling
-```
-
-**Stap 4.2: Synergy Content Aanpassingen (25 min)**
-```
-□ Wijzig services array naar 4 synergy redenen:
-  1. "Vertrouwen + Technologie" 
-  2. "Offline + Online"
-  3. "Creativiteit + Logica"  
-  4. "Foundation + Acceleration"
-
-□ Pas beschrijvingen aan naar waarom deze combinatie werkt
-□ Wijzig progress percentages naar synergie sterkte scores
-□ Update section header naar team synergy messaging
-□ Wijzig CTA links naar team-gerelateerde acties
-□ Behoud alle card styling, hover effects, icon positioning
-```
-
-### FASE 5: TEAM PROCESS COMPONENT (60 min)
-
-**Stap 5.1: Process Component Basis (15 min)**
-```
-□ Kopieer components/fusion-terminals.tsx
-□ Hernoem naar components/team-process.tsx
-□ Behoud dual terminal layout en styling
-□ Behoud alle animation timing en effects
-```
-
-**Stap 5.2: Process Timeline Implementation (45 min)**
-```
-□ Wijzig linker terminal header naar "elmer@foundation:~$"
-□ Wijzig rechter terminal header naar "colin@acceleratie:~$"
-□ Update terminalLines arrays naar 4-fasen werkwijze:
-
-Fase 1 (Discovery): Beide terminals synchroon
-Fase 2 (Foundation): Elmer terminal actief, Colin voorbereidend  
-Fase 3 (Acceleration): Colin terminal actief, Elmer supportend
-Fase 4 (Fusion): Beide terminals samen
-
-□ Pas timing aan zodat terminals parallel maar gefaseerd updaten
-□ Update section header naar proces/werkwijze messaging
-□ Behoud cursor animations, terminal styling, status indicators
-```
-
-### FASE 6: TEAM CASES COMPONENT (75 min)
-
-**Stap 6.1: Cases Component Basis (20 min)**
-```
-□ Kopieer components/fusion-projects.tsx
-□ Hernoem naar components/team-cases.tsx
-□ Behoud project card grid layout  
-□ Behoud progress bars en gradient animations
-```
-
-**Stap 6.2: Case Studies Implementation (55 min)**
-```
-□ Reduceer projects array van 4 naar 2 uitgebreide cases:
-
-Case 1: Verfenfabrikant Transformatie
-- Titel wijzigen naar case study naam
-- Beschrijving uitbreiden met Elmer's bijdrage (Foundation)
-- Toevoegen Colin's bijdrage (Acceleration)  
-- Combined resultaat en ROI cijfers
-- Timeline breakdown (4 weken)
-
-Case 2: Dakdekker Schaalvergroting  
-- Titel wijzigen naar case study naam
-- Beschrijving uitbreiden met dual approach
-- Voor/na vergelijking prominent maken
-- Timeline breakdown (6 weken)
-
-□ Wijzig progress bars naar ROI achievement percentages
-□ Update status badges naar case-relevante statussen
-□ Wijzig CTA links naar case study details
-□ Behoud card hover effects, gradient borders, shadow styling
-```
-
-### FASE 7: TEAM CONTACT COMPONENT (35 min)
-
-**Stap 7.1: Contact Component Basis (10 min)**
-```
-□ Kopieer components/fusion-contact.tsx
-□ Hernoem naar components/team-contact.tsx
-□ Behoud form layout en styling classes
-□ Behoud gradient effects en animations
-```
-
-**Stap 7.2: Contact Content Aanpassingen (25 min)**
-```
-□ Wijzig hoofdheader naar team consultation focus
-□ Update form labels naar team-gerelateerde velden:
-  - "Agent Designation" → "Bedrijfsnaam"
-  - "Secure Channel" → "Email adres"  
-  - "Preferred Reality" dropdown → "Voorkeur contact" dropdown
-  - "Fusion Request" → "Waarom wil je met ons team werken?"
-
-□ Pas contact informatie aan naar beide teamleden
-□ Update CTA button naar team consultation booking
-□ Wijzig footer ASCII art naar team branding
-□ Behoud alle form styling, input effects, button animations
-```
+---
 
 ### FASE 8: INTEGRATION & TESTING (40 min)
-
 **Stap 8.1: Component Integration (20 min)**
-```
-□ Import alle nieuwe team components in app/over-ons/page.tsx
-□ Verificeer component volgorde correct is
-□ Check alle component props en exports kloppen
-□ Test pagina laadt zonder console errors
-```
-
 **Stap 8.2: Quality Assurance (20 min)**
-```
-□ Test volledige pagina flow van hero tot contact
-□ Verificeer alle animaties werken zoals fusion pagina
-□ Check responsive design op mobile en tablet
-□ Test alle CTA buttons en links functioneren
-□ Verificeer MatrixRain effect performance
-□ Cross-browser compatibility check (Chrome, Firefox, Safari)
-□ Check fusion aesthetic consistent is door hele pagina
-```
+
+---
+
+**Status:**
+Alle componenten zijn gebouwd en aangepast volgens het plan. Klaar voor integratie en testen van de volledige team pagina!
 
 ## ⏱️ TIJDSCHATTING TOTAAL
 
