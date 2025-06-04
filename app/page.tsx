@@ -6,6 +6,7 @@ import ServicesSection from "@/components/services-section"
 import ProjectsSection from "@/components/projects-section"
 import ContactSection from "@/components/contact-section"
 import TerminalDemo from "@/components/terminal-demo"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -25,13 +26,23 @@ export default function Home() {
               { name: "./projects", href: "#projects" },
               { name: "./contact", href: "#contact" },
             ].map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-[#2E9BDA] hover:text-[#F5B041] transition-colors duration-300"
-              >
-                {item.name}
-              </a>
+              item.href.startsWith("/") ? (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-[#2E9BDA] hover:text-[#F5B041] transition-colors duration-300"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-[#2E9BDA] hover:text-[#F5B041] transition-colors duration-300"
+                >
+                  {item.name}
+                </a>
+              )
             ))}
           </nav>
           <button className="ascii-btn border-2 border-[#2E9BDA] text-[#2E9BDA] px-4 py-2 hover:bg-[#2E9BDA] hover:text-black transition-colors duration-300 flex items-center gap-2">
