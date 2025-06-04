@@ -23,8 +23,8 @@ export default function MatrixPage() {
 
           <footer className="mt-24 border-t border-[#333] pt-8 text-center">
             <div className="text-sm text-[#666]">
-              <p>&copy; {new Date().getFullYear()} AI-LINER Matrix Division. All rights reserved.</p>
-              <p className="mt-2 text-[#00ff41]">Building AI solutions in terminal style</p>
+              <p>&copy; {new Date().getFullYear()} AI-LINER Acceleratie. Alle rechten voorbehouden.</p>
+              <p className="mt-2 text-[#00ff41]">AI-systemen die je business versnellen</p>
             </div>
             <div className="mt-4 flex justify-center gap-6">
               {["./github", "./twitter", "./linkedin"].map((social) => (
@@ -32,6 +32,13 @@ export default function MatrixPage() {
                   {social}
                 </a>
               ))}
+            </div>
+            <div className="mb-6">
+              <div className="text-xl font-bold text-[#00ff41] mb-2">Klaar voor de volgende stap?</div>
+              <div className="text-[#ff0080] mb-4">Complete transformatie = gegarandeerd succes</div>
+              <a href="/fusion" className="inline-block bg-[#00ff41] text-black font-bold px-6 py-2 rounded hover:bg-[#ff0080] hover:text-black transition-colors duration-300">
+                Ontdek Fusion
+              </a>
             </div>
           </footer>
         </div>

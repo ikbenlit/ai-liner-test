@@ -3,29 +3,29 @@ import { Bot, Database, LineChart, Network } from "lucide-react"
 const services = [
   {
     icon: <Bot className="w-12 h-12" />,
-    title: "AI Consciousness",
-    description: "Create digital beings with advanced neural pathways and decision-making capabilities.",
+    title: "AI Chatbot Development",
+    description: "Klantservice bots die écht helpen, technische support automatisering, meertalige verkoop assistenten.",
     color: "text-[#00ff41]",
     progress: 95,
   },
   {
     icon: <Database className="w-12 h-12" />,
-    title: "Data Mining",
-    description: "Extract valuable insights from the vast digital underground networks.",
+    title: "Business Process Automation",
+    description: "Offertes in minuten i.p.v. uren, lead kwalificatie op autopilot, administratie die zichzelf doet.",
     color: "text-[#ff0080]",
     progress: 87,
   },
   {
     icon: <LineChart className="w-12 h-12" />,
-    title: "Reality Analytics",
-    description: "Analyze patterns across multiple dimensional data streams and timelines.",
+    title: "Knowledge Management",
+    description: "Digitale bedrijfskennis centraal, AI-powered zoek en antwoord systemen, training materialen die zich updaten.",
     color: "text-[#00bfff]",
     progress: 92,
   },
   {
     icon: <Network className="w-12 h-12" />,
-    title: "Network Integration",
-    description: "Seamlessly connect to the global neural network infrastructure.",
+    title: "Data Analytics & Insights",
+    description: "Real-time business intelligence, voorspellende analyses voor groei, KPI dashboards die acties voorstellen.",
     color: "text-[#00ff41]",
     progress: 78,
   },
@@ -36,10 +36,10 @@ export default function MatrixServices() {
     <section className="py-16 border-t border-[#333]" id="services">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-[#ff0080] mb-4 relative">
-          ./services
+          ./acceleratie_diensten
           <span className="text-[#00ff41] animate-pulse">{">"}</span>
         </h2>
-        <p className="text-[#666] max-w-2xl mx-auto">Digital solutions for the next evolution of consciousness</p>
+        <p className="text-[#666] max-w-2xl mx-auto">AI-oplossingen die je bedrijf naar het volgende niveau tillen</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -62,7 +62,7 @@ export default function MatrixServices() {
 
             <div className="mb-4">
               <div className="flex justify-between text-sm mb-2">
-                <span className="text-[#00ff41]">Completion Rate</span>
+                <span className="text-[#00ff41]">Implementatie Succes</span>
                 <span className="text-[#ff0080]">{service.progress}%</span>
               </div>
               <div className="w-full bg-black h-2 border border-[#333]">
@@ -77,7 +77,7 @@ export default function MatrixServices() {
               href="#"
               className="inline-flex items-center text-[#00ff41] hover:text-[#ff0080] transition-colors group-hover:translate-x-2 transform duration-300"
             >
-              ./access_protocol <span className="ml-2">{"→"}</span>
+              ./plan_implementatie <span className="ml-2">{"→"}</span>
             </a>
           </div>
         ))}

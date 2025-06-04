@@ -1,8 +1,18 @@
 import { ArrowRight } from "lucide-react"
+import TypewriterTerminal from "./typewriter-terminal"
+
+const heroTerminalLines = [
+  "> Initialiseren FUNDAMENT protocol...",
+  "> Scannen bedrijfsinfrastructuur...",
+  "> Analyseren merk geloofwaardigheid...",
+  "> Controleren marktpositie...",
+  "> Status: FUNDAMENT KLAAR voor AI-acceleratie",
+  "> Volgende stap: ./verbinden_met_acceleratie",
+]
 
 export default function HeroSection() {
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden" id="home">
+    <section className="py-16 md:py-24 relative overflow-hidden" id="fundament">
       {/* ASCII background pattern */}
       <div className="absolute inset-0 opacity-5 text-[#2E9BDA] text-xs leading-none whitespace-pre overflow-hidden pointer-events-none">
         {Array(30)
@@ -22,60 +32,51 @@ export default function HeroSection() {
 
       <div className="relative z-10">
         <div className="text-center mb-8">
-          <div className="inline-block border-2 border-[#2E9BDA] px-4 py-1 text-sm mb-4">
-            <span className="text-[#F5B041]">v1.0.0</span> | SYSTEM.BOOT_COMPLETE
+          <div className="inline-block border-2 border-[#E74C3C] px-4 py-1 text-sm mb-4">
+            <span className="text-[#F5B041]">v1.0.0</span> | FUNDAMENT.INITIALISATIE
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glitch-text relative">
-            <span className="relative z-10">AI-LINER ASCII TECH</span>
+            <span className="relative z-10">AI-LINER FUNDAMENT</span>
+            {/*
             <span
               className="absolute top-0 left-0 text-[#F5B041] opacity-70 z-0"
               style={{ clipPath: "inset(0 0 0 0)", transform: "translate(-5px, 5px)" }}
             >
-              AI-LINER ASCII TECH
+              AI-LINER FUNDAMENT
             </span>
+
             <span
               className="absolute top-0 left-0 text-[#E74C3C] opacity-70 z-0"
               style={{ clipPath: "inset(0 0 0 0)", transform: "translate(5px, -5px)" }}
             >
-              AI-LINER ASCII TECH
+              AI-LINER FUNDAMENT
             </span>
+                        */}
           </h1>
-          <p className="text-xl md:text-2xl text-[#F5B041] mb-8">Building AI solutions with retro-future style</p>
+          <p className="text-xl md:text-2xl text-[#F5B041] mb-8">SOLIDE • BETROUWBAAR • ESSENTIEEL</p>
+          <p className="text-lg text-[#999] mb-8">Voordat je accelereert, heb je een fundament nodig dat houdt</p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 justify-center mb-12">
-          <button className="ascii-btn border-2 border-[#2E9BDA] text-[#2E9BDA] px-6 py-3 hover:bg-[#2E9BDA] hover:text-black transition-colors duration-300 relative overflow-hidden group">
+          <button className="ascii-btn border-2 border-[#E74C3C] text-[#E74C3C] px-6 py-3 hover:bg-[#2E9BDA] hover:text-black transition-colors duration-300 relative overflow-hidden group">
             <span className="relative z-10 flex items-center gap-2">
-              ./start_project <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              ./start_fundament_check <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
           </button>
 
           <button className="ascii-btn border-2 border-[#F5B041] text-[#F5B041] px-6 py-3 hover:bg-[#F5B041] hover:text-black transition-colors duration-300 relative overflow-hidden group">
-            <span className="relative z-10">./view_demo</span>
+            <span className="relative z-10">./bekijk_portfolio</span>
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
           </button>
         </div>
 
-        <div className="terminal-window border border-[#2E9BDA] bg-[#0a0a0a] rounded overflow-hidden shadow-[0_0_15px_rgba(46,155,218,0.2)] max-w-3xl mx-auto">
-          <div className="terminal-header bg-[#1a1a1a] p-2 border-b border-[#2E9BDA] text-sm text-[#F5B041]">
-            user@ai-liner:~$
-          </div>
-          <div className="terminal-body p-4 font-mono text-sm">
-            <div className="mb-2">
-              {"> Initializing"} <span className="text-[#F5B041]">AI-LINER</span> systems...
-            </div>
-            <div className="mb-2">{"> Loading neural networks..."}</div>
-            <div className="mb-2">{"> Connecting to data sources..."}</div>
-            <div className="mb-2">
-              {"> Status:"} <span className="text-[#2E9BDA]">READY</span>
-            </div>
-            <div className="flex items-center">
-              {"> Welcome to AI-LINER. How can I assist you today?"}
-              <span className="inline-block w-2 h-5 bg-[#F5B041] ml-1 animate-blink"></span>
-            </div>
-          </div>
-        </div>
+        <TypewriterTerminal
+          lines={heroTerminalLines}
+          className="max-w-3xl mx-auto"
+          typingSpeed={45}
+          linePause={800}
+        />
       </div>
     </section>
   )

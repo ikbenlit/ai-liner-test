@@ -1,35 +1,43 @@
 const projects = [
   {
-    title: "Project Zion",
-    description: "Advanced AI consciousness transfer protocol for digital immortality.",
-    status: "ACTIVE",
-    progress: 100,
+    title: "Verfenfabrikant - Apeldoorn",
+    description: "AI-chatbot voor technische vragen in 12 talen. Van 6 uur/dag naar 6 minuten per vraag.",
+    status: "LIVE",
+    progress: 95,
     progressColor: "from-[#00ff41] to-[#00ff41]",
     statusColor: "text-[#00ff41]",
+    roi: "340% in eerste maand",
+    quote: "Duitse klanten krijgen binnen 30 seconden antwoord, ook om 3 uur 's nachts",
   },
   {
-    title: "Oracle.exe",
-    description: "Predictive analytics system capable of seeing multiple future timelines.",
-    status: "TESTING",
-    progress: 85,
+    title: "Dakdekker - Zwolle",
+    description: "AI-offerte generator via WhatsApp foto's. Van 4 uur naar 10 minuten per offerte.",
+    status: "SCALING",
+    progress: 87,
     progressColor: "from-[#ff0080] to-[#00ff41]",
     statusColor: "text-[#ff0080]",
+    roi: "8x meer business in zelfde tijd",
+    quote: "Klant stuurt foto, 10 minuten later heeft hij een offerte. Concurrenten zijn nog aan het rekenen",
   },
   {
-    title: "Agent Smith",
-    description: "Self-replicating security protocol for system protection and monitoring.",
-    status: "CONTAINED",
-    progress: 60,
+    title: "Makelaar - Utrecht",
+    description: "AI lead-kwalificatie systeem. Van 20 naar 3 échte leads per dag.",
+    status: "OPTIMIZING",
+    progress: 92,
     progressColor: "from-[#00bfff] to-[#ff0080]",
     statusColor: "text-[#00bfff]",
+    roi: "Van 1 op 20 deals naar 2 op 3 deals",
+    quote: "Mijn AI analyseert gedrag en urgentie. Ik bel alleen nog hete prospects",
   },
   {
-    title: "Red Pill Protocol",
-    description: "Reality awakening system for consciousness liberation programs.",
-    status: "CLASSIFIED",
-    progress: 30,
+    title: "Eventplanner - Amsterdam",
+    description: "Automatische coördinatie en communicatie. 60% minder administratie, 40% meer events.",
+    status: "EXPANDING",
+    progress: 78,
     progressColor: "from-[#ff0080] to-[#00bfff]",
     statusColor: "text-[#ff0080]",
+    roi: "Van 2 naar 3,5 events per maand",
+    quote: "Mijn AI houdt leveranciers op de hoogte en plant meetings. Ik focus op mooie momenten creëren",
   },
 ]
 
@@ -38,11 +46,11 @@ export default function MatrixProjects() {
     <section className="py-16 border-t border-[#333]" id="projects">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-[#ff0080] mb-4 relative">
-          ./active_projects
+          ./live_acceleraties
           <span className="text-[#00ff41] animate-pulse">{">"}</span>
         </h2>
         <p className="text-[#666] max-w-2xl mx-auto">
-          Current operations in the digital realm and consciousness matrix
+          Echte resultaten van bedrijven die versnellen met AI
         </p>
       </div>
 
@@ -63,11 +71,19 @@ export default function MatrixProjects() {
               </span>
             </div>
 
-            <p className="text-[#666] mb-6 group-hover:text-[#999] transition-colors">{project.description}</p>
+            <p className="text-[#666] mb-4 group-hover:text-[#999] transition-colors">{project.description}</p>
+            
+            <div className="text-sm text-[#00ff41] mb-4">
+              ROI: {project.roi}
+            </div>
+
+            <div className="text-xs text-[#666] italic mb-6">
+              "{project.quote}"
+            </div>
 
             <div className="mb-4">
               <div className="flex justify-between text-sm mb-2">
-                <span className="text-[#00ff41]">Progress</span>
+                <span className="text-[#00ff41]">Implementatie</span>
                 <span className="text-[#ff0080]">{project.progress}%</span>
               </div>
               <div className="w-full bg-black h-3 border border-[#333] overflow-hidden">
@@ -80,7 +96,7 @@ export default function MatrixProjects() {
 
             <div className="flex justify-between items-center">
               <a href="#" className="inline-flex items-center text-[#00ff41] hover:text-[#ff0080] transition-colors">
-                ./access_files <span className="ml-2">{"→"}</span>
+                ./bekijk_casestudy <span className="ml-2">{"→"}</span>
               </a>
               <div className="text-xs text-[#333] group-hover:text-[#00ff41] transition-colors">
                 {"["}ID: {String(index + 1).padStart(3, "0")}

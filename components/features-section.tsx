@@ -1,25 +1,25 @@
-import { Brain, Code, Shield, Zap } from "lucide-react"
+import { Smartphone, Globe, Megaphone, Cog } from "lucide-react"
 
 const features = [
   {
-    icon: <Brain className="w-8 h-8 text-[#2E9BDA]" />,
-    title: "Neural Networks",
-    description: "Advanced AI algorithms trained on extensive datasets for optimal performance and accuracy.",
+    icon: <Smartphone className="w-8 h-8 text-[#2E9BDA]" />,
+    title: "Merkidentiteit",
+    description: "Logo's die vertrouwen wekken, huisstijlen die professioneel ogen, eerste indrukken die beklijven.",
   },
   {
-    icon: <Code className="w-8 h-8 text-[#F5B041]" />,
-    title: "Clean Code",
-    description: "Expertly crafted code following best practices for maintainability and scalability.",
+    icon: <Globe className="w-8 h-8 text-[#F5B041]" />,
+    title: "Digitale Aanwezigheid",
+    description: "Websites die converteren, content die verkoopt, SEO die gevonden wordt.",
   },
   {
-    icon: <Shield className="w-8 h-8 text-[#E74C3C]" />,
-    title: "Secure Systems",
-    description: "Enterprise-grade security protocols protecting your data and applications.",
+    icon: <Megaphone className="w-8 h-8 text-[#E74C3C]" />,
+    title: "Marketing Fundament",
+    description: "Catalogi die overtuigen, brochures die boeien, beursstands die opvallen.",
   },
   {
-    icon: <Zap className="w-8 h-8 text-[#F5B041]" />,
-    title: "Fast Deployment",
-    description: "Rapid development and deployment cycles to get your solutions to market quickly.",
+    icon: <Cog className="w-8 h-8 text-[#F5B041]" />,
+    title: "Bedrijfsprocessen",
+    description: "Workflows die werken, systemen die schalen, processen die blijven.",
   },
 ]
 
@@ -27,9 +27,9 @@ export default function FeaturesSection() {
   return (
     <section className="py-16 border-t border-[#333]">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-[#F5B041] mb-4">SYSTEM.FEATURES</h2>
+        <h2 className="text-3xl font-bold text-[#F5B041] mb-4">FUNDAMENT.PIJLERS</h2>
         <p className="text-[#999] max-w-2xl mx-auto">
-          Our cutting-edge technology combines retro aesthetics with modern capabilities
+          De essentiële bouwstenen voor een solide offline business fundament
         </p>
       </div>
 
